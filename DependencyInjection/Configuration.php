@@ -39,8 +39,9 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ldap_tools');
+        $treeBuilder = new TreeBuilder('ldap_tools');
+        $rootNode = $treeBuilder->getRootNode();
+        //$rootNode = $treeBuilder->root('ldap_tools');
         $this->addMainSection($rootNode);
         $this->addDoctrineSection($rootNode);
         $this->addGeneralSection($rootNode);
