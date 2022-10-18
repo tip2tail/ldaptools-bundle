@@ -14,7 +14,7 @@ use Doctrine\Common\Annotations\Reader;
 use Doctrine\Common\EventSubscriber;
 use Doctrine\Common\Persistence\ObjectManager;
 use LdapTools\Bundle\LdapToolsBundle\Annotation\LdapObject as LdapObjectAnnotation;
-use Doctrine\ORM\Event\LifecycleEventArgs;
+use Doctrine\Persistence\Event\LifecycleEventArgs;
 use LdapTools\LdapManager;
 use LdapTools\Object\LdapObject;
 use LdapTools\Object\LdapObjectCollection;
