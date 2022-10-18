@@ -11,14 +11,15 @@
 namespace LdapTools\Bundle\LdapToolsBundle\Security\User;
 
 use LdapTools\Object\LdapObject;
-use Symfony\Component\Security\Core\User\AdvancedUserInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
+//use Symfony\Component\Security\Core\User\AdvancedUserInterface; // No more in Symfony 5
 
 /**
  * Represents a user from LDAP.
  *
  * @author Chad Sikorra <Chad.Sikorra@gmail.com>
  */
-class LdapUser extends LdapObject implements LdapUserInterface, AdvancedUserInterface, \Serializable
+class LdapUser extends LdapObject implements LdapUserInterface, UserInterface, \Serializable
 {
     /**
      * @var array The Symfony roles for this user.
