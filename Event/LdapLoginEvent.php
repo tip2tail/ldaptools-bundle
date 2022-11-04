@@ -11,7 +11,7 @@
 namespace LdapTools\Bundle\LdapToolsBundle\Event;
 
 use LdapTools\Bundle\LdapToolsBundle\Security\User\LdapUser;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
